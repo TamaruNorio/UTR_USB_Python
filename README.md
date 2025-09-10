@@ -23,7 +23,7 @@ pip install pyserial
 2. ソースコードをダウンロードし、任意のフォルダへ展開  
 3. コマンドプロンプト（またはPowerShell）から実行
    ```bash
-   python utr_usb_sample.py
+   python src/utr_usb_sample.py
    ```
 4. コンソールにタグ読取結果が表示されます  
 
