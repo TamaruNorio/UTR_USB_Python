@@ -1,6 +1,6 @@
 ## TAKAYA RFID リーダライタ サンプルプログラム ドキュメント
 
-> **ドキュメントの全体像や他のサンプルプログラムについては、[こちらのランディングページ](https://TamaruNorio.github.io/TAKAYA-RFID-Sample-Docs/python/index.md)をご覧ください。**
+> **ドキュメントの全体像や他のサンプルプログラムについては、[こちらのランディングページ](https://tamarunorio.github.io/TAKAYA-RFID-Sample-Code/)をご覧ください。**
 
 # Takaya UTR-S201/202 USB Sample (Python)
 
