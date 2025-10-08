@@ -1,50 +1,50 @@
+## TAKAYA RFID リーダライタ サンプルプログラム ドキュメント
+
+> **ドキュメントの全体像や他のサンプルプログラムについては、[こちらのランディングページ](https://TamaruNorio.github.io/TAKAYA-RFID-Sample-Docs/python/index.md)をご覧ください。**
+
 # Takaya UTR-S201/202 USB Sample (Python)
 
-タカヤ製RFIDリーダライタ **UTR-S201/202 シリーズ** を  
-USBシリアル接続で制御するための **Pythonサンプルプログラム** です。  
-本プログラムは社内検証用に作成したものを公開しており、**無保証** での提供となります。
+タカヤ製RFIDリーダライタ **UTR-S201/202 シリーズ** を USBシリアル接続で制御するための **Pythonサンプルプログラム** です。本プログラムは社内検証用に作成したものを公開しており、**無保証** での提供となります。
 
----
+## 概要
 
-## 📦 動作環境
-- OS: Windows 10 / 11  
-- Python: 3.8 以上  
-- 必要ライブラリ: [pyserial](https://pypi.org/project/pyserial/)  
+このサンプルプログラムは、UTR-S201/202シリーズリーダライタをUSBシリアル接続で制御するためのPythonサンプルです。基本的なタグ読み取り機能を提供し、コンソールにタグ読取結果を表示します。
 
-インストール例:
-```bash
-pip install pyserial
+## 動作環境
+
+-   OS: Windows 10 / 11
+-   Python: 3.8 以上
+-   必要ライブラリ: [pyserial](https://pypi.org/project/pyserial/)
+
+## セットアップと実行方法
+
+1.  **リポジトリのクローン**:
+    ```bash
+    git clone https://github.com/TamaruNorio/UTR_USB_Python.git
+    cd UTR_USB_Python
+    ```
+2.  **必要ライブラリのインストール**:
+    ```bash
+    pip install pyserial
+    ```
+3.  **UTR-S201/202 リーダライタをUSB接続**:
+4.  **実行**:
+    ```bash
+    python src/utr_usb_sample.py
+    ```
+    コンソールにタグ読取結果が表示されます。
+
+## プロジェクト構成
+
+```
+UTR_USB_Python/
+├─ src/
+│  └─ utr_usb_sample.py   # メインスクリプト
+├─ .gitignore
+└─ README.md
 ```
 
----
+## ライセンス
 
-## 🚀 使い方
-1. UTR-S201/202 リーダライタをUSB接続  
-2. ソースコードをダウンロードし、任意のフォルダへ展開  
-3. コマンドプロンプト（またはPowerShell）から実行
-   ```bash
-   python src/utr_usb_sample.py
-   ```
-4. コンソールにタグ読取結果が表示されます  
+このリポジトリのソースコードは **MIT License** の下で公開されています。詳細は [LICENSE](./LICENSE) ファイルをご確認ください。
 
----
-
-## 📖 参考資料
-本プログラムは **通信プロトコル仕様書** に基づいて作成されています。  
-詳細仕様は以下を参照してください。  
-
-- [UTRシリーズ 通信プロトコル仕様書](https://www.product.takaya.co.jp/rfid/download/uhf.html)  
-- [制御用ソフト開発方法 (TDR-OTH-PROGRAMMING-103)](https://www.takaya.co.jp/product/rfid/)  
-
----
-
-## ⚠️ 注意事項
-- 本プログラムは **サンプル** です。商用利用を前提とした品質保証は行っていません。  
-- ご利用にはRFID機器およびプロトコル仕様に関する基礎知識が必要です。  
-- 実際の機器設定・運用には **UTR-RWManager** を併用してください。  
-
----
-
-## 📄 ライセンス
-このリポジトリのソースコードは **MIT License** の下で公開されています。  
-詳細は [LICENSE](./LICENSE) ファイルをご確認ください。
